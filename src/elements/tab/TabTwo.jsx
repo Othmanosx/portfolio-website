@@ -4,8 +4,8 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 class TabsTwo extends Component {
   render() {
     let tab1 = "Main skills",
-      tab2 = "Awards",
-      tab3 = "Experience",
+      // tab2 = "Awards",
+      // tab3 = "Experience",
       tab4 = "Education & Certification";
     const { tabStyle } = this.props;
     return (

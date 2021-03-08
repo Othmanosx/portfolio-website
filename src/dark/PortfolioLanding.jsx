@@ -11,6 +11,7 @@ import PortfolioList from "../elements/portfolio/PortfolioList";
 import ServiceList from "../elements/service/ServiceList";
 import Particles from "react-particles-js";
 import BrandTwo from "./BrandTwo";
+import avatar from '../assets/images/about/avatar.jpg'
 
 const SlideList = [
   {
@@ -161,7 +162,7 @@ const PortfolioLanding = () => {
                             <div className="thumbnail">
                               <img
                                 className="w-100"
-                                src="/assets/images/about/avatar.jpg"
+                                src={avatar}
                                 alt="About Images"
                               />
                             </div>

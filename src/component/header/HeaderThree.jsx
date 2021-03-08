@@ -8,6 +8,7 @@ import {
 } from "react-icons/fa";
 import { FiX, FiMenu } from "react-icons/fi";
 import Scrollspy from "react-scrollspy";
+import logo from '../../assets/images/logo/logo.svg'
 
 const SocialShare = [
   { Social: <FaFacebookF />, link: "https://www.facebook.com/iothmanosx" },
@@ -63,8 +64,8 @@ class HeaderThree extends Component {
     let logoUrl = (
       <img
         style={{ width: "30px", opacity: 0.8 }}
-        src="/assets/images/logo/logo.svg"
-        alt="Digital Agency"
+        src={logo}
+        alt="Ghost"
       />
     );
 

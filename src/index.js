@@ -1,9 +1,10 @@
 // React Required
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
+import 'bootstrap/dist/css/bootstrap.css';
 
 // Create Import File
-import "./index.scss";
+import "./index.css";
 
 import DarkPortfolioLanding from "./dark/PortfolioLanding";
 import * as serviceWorker from "./serviceWorker";

@@ -1,4 +1,10 @@
 import React, { Component } from "react";
+import digiarty from '../assets/images/brand/digiarty.png'
+import gear from '../assets/images/brand/gearbest.svg'
+import imobie from '../assets/images/brand/imobie.svg'
+import fone from '../assets/images/brand/imyfone.svg'
+import le from '../assets/images/brand/leawo.webp'
+import ten from '../assets/images/brand/tenorshare.svg'
 
 class BrandTwo extends Component {
   render() {
@@ -17,22 +23,22 @@ class BrandTwo extends Component {
 
         <ul style={{ filter: "invert(1)" }} className="brand-style-2">
           <li>
-            <img src="/assets/images/brand/digiarty.png" alt="Logo Images" />
+            <img src={digiarty} alt="Logo digiarty" />
           </li>
           <li>
-            <img src="/assets/images/brand/gearbest.svg" alt="Logo Images" />
+            <img src={gear} alt="Logo gearbest" />
           </li>
           <li>
-            <img src="/assets/images/brand/imobie.svg" alt="Logo Images" />
+            <img src={imobie} alt="Logo imobie" />
           </li>
           <li>
-            <img src="/assets/images/brand/imyfone.svg" alt="Logo Images" />
+            <img src={fone} alt="Logo fone" />
           </li>
           <li>
-            <img src="/assets/images/brand/leawo.webp" alt="Logo Images" />
+            <img src={le} alt="Logo leawo" />
           </li>
           <li>
-            <img src="/assets/images/brand/tenorshare.svg" alt="Logo Images" />
+            <img style={{width: '150px'}} src={ten} alt="Logo tenorshare" />
           </li>
         </ul>
       </React.Fragment>

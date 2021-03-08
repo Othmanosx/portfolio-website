@@ -8,6 +8,7 @@
     "@material-ui/core": "4.11.3",
     "@material-ui/lab": "4.0.0-alpha.57",
     "babel-preset-react-app": "^10.0.0",
+    "bootstrap": "^4.6.0",
     "emailjs-com": "2.6.4",
     "eslint-config-react-app": "^6.0.0",
     "google-map-react": "^2.1.9",
