@@ -26,7 +26,6 @@ class HeaderThree extends Component {
 
     //  this.subMetuTrigger = this.subMetuTrigger.bind(this);
     window.addEventListener("load", function () {
-      console.log("All assets are loaded");
     });
   }
   menuTrigger() {
