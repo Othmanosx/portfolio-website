@@ -31,28 +31,31 @@ class ContactThree extends Component {
   }
   sendEmail = (e) => {
     e.preventDefault();
-
-    emailjs
-      .send(
-        "service_oc8qznf",
-        "template_oc0q9be",
-        {
-          rnEmail: this.state.rnEmail,
-          rnSubject: this.state.rnSubject,
-          rnMessage: this.state.rnMessage,
-          rnName: this.state.rnName
-        },
-        "user_HDJ1SCLZ6I6ByO7Ey8D36"
-      )
-      .then(
-        (result) => {
-          this.handleClick();
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-    this.setState({ rnName: "", rnEmail: "", rnSubject: "", rnMessage: "" });
+    if (this.state.rnName && this.state.rnEmail) {
+      emailjs
+        .send(
+          "service_oc8qznf",
+          "template_oc0q9be",
+          {
+            rnEmail: this.state.rnEmail,
+            rnSubject: this.state.rnSubject,
+            rnMessage: this.state.rnMessage,
+            rnName: this.state.rnName
+          },
+          "user_HDJ1SCLZ6I6ByO7Ey8D36"
+        )
+        .then(
+          (result) => {
+            this.handleClick();
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+      this.setState({ rnName: "", rnEmail: "", rnSubject: "", rnMessage: "" });
+    } else {
+      alert("Please fill in the contact form before submitting");
+    }
   };
   render() {
     return (
@@ -65,7 +68,10 @@ class ContactThree extends Component {
                 <p className="description">
                   I am available for full time, part time and freelance work.
                   Connect with me via email:
-                  <a href="mailto:admin@example.com"> admin@example.com</a>{" "}
+                  <a href="mailto:othmanosx@gmail.com">
+                    {" "}
+                    othmanosx@gmail.com
+                  </a>{" "}
                 </p>
               </div>
               <div className="form-wrapper">
@@ -91,7 +97,7 @@ class ContactThree extends Component {
                     htmlFor="item02"
                   >
                     <input
-                      type="text"
+                      type="email"
                       name="email"
                       id="item02"
                       value={this.state.rnEmail}
@@ -127,7 +133,7 @@ class ContactThree extends Component {
                     />
                   </label>
                   <button
-                    className="rn-button-style--2 btn-solid"
+                    className="rn-btn btn-solid"
                     type="submit"
                     value="submit"
                     name="submit"
