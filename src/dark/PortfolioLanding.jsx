@@ -117,7 +117,7 @@ const PortfolioLanding = () => {
                           <span> Designer.</span>
                         </TextLoop>{" "}
                       </h1>
-                      <h2>based in Iraq.</h2>
+                      <h2>Based in Iraq.</h2>
                       {value.description ? (
                         <p className="description">{value.description}</p>
                       ) : (
