@@ -29,7 +29,7 @@ ul {
                 line-height: 10;
             }
             img {
-                opacity: 0.7;
+                opacity: 1;
                 transition: 0.3s;
                 max-height: 110px;
                 max-width: 150px;
@@ -45,7 +45,7 @@ ul {
                 border-radius: 6px;
                 img{
                     opacity: 1;
-                    filter: brightness(0) invert(1);
+                    filter: brightness(0) ;
                 }
             }
             
@@ -86,14 +86,14 @@ ul{
             }
         }
         img {
-            opacity: 0.7;
+            opacity: 1;
             transition: 0.3s;
-            max-height: 110px;
+            max-height: 120px;
             max-width: 150px;
             cursor: pointer;
             @media #{$sm-layout} {
-                max-height: 60px;
-                max-width: 90px;
+                max-height: 70px;
+                max-width: 100px;
             }
             @media #{$lg-layout} {
                 max-width: 129px;
@@ -118,7 +118,7 @@ ul{
         }
         a {
             img {
-                filter: brightness(0) invert(1);
+                filter: brightness(0) ;
             }
             &:hover {
                 img {

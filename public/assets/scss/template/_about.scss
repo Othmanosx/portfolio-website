@@ -151,8 +151,10 @@
     .thumbnail {
         position: relative;
         z-index: 2;
+        text-align: center;
         img{
-            border-radius: 8px;
+            border-radius: 50%;
+            width: 170px !important;
            
         }
     }

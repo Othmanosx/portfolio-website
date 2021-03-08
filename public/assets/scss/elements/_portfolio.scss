@@ -4,21 +4,21 @@
 .portfolio {
     position: relative;
     @extend %transition;
-    min-height: 600px;
+    min-height: 260px;
     width: 100%;
     padding-top: 35%;
     
     @media #{$laptop-device} {
-        min-height: 500px;
+        min-height: 255px;
     }
     @media #{$lg-layout} {
-        min-height: 500px;
+        min-height: 190px;
     }
     @media #{$md-layout} {
-        min-height: 450px;
+        min-height: 216px;
     }
     @media #{$sm-layout} {
-        min-height: 400px;
+        min-height: 274px;
     }
     .thumbnail-inner{
         transition: transform .28s ease;
@@ -35,8 +35,8 @@
         cursor: pointer;
 
         &::before{
-            background-color: #f6004c;
-            background-image: linear-gradient(#f6004c 10%, #000000 100%);
+            background-color: #008bff;
+            background-image: linear-gradient(#008bff 10%, #000000 100%);
             position: absolute;
             content: "";
             top: 0;
@@ -235,7 +235,7 @@
     &.text-center {
         .content {
             position: absolute;
-            bottom: 40px;
+            bottom: 20px;
             left: 40px;
             max-width: 80% !important;
             z-index: 10;
