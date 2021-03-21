@@ -8,10 +8,6 @@ import "./index.css";
 
 import DarkPortfolioLanding from "./dark/PortfolioLanding";
 import * as serviceWorker from "./serviceWorker";
-import ReactGA from 'react-ga';
-ReactGA.initialize('G-F270B7YPPX');
-
-ReactGA.pageview(window.location.pathname + window.location.search);
 
 
 class Root extends Component {
