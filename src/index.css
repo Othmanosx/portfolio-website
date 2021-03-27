@@ -4445,6 +4445,9 @@ p:last-child {
 /*===================
 Custom Row
 ======================*/
+.row {
+  justify-content: center;
+}
 .row--0 {
   margin-left: -0px;
   margin-right: -0px;
@@ -11663,7 +11666,7 @@ Footer Styles
   color: #ffffff;
 }
 .portfolio .content .inner .portfolio-button {
-  margin-top: 35px;
+  margin-top: 8px;
   transition: 0.7s;
 }
 @media only screen and (max-width: 575px) {
