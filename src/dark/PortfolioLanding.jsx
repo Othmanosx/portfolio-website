@@ -11,7 +11,8 @@ import PortfolioList from "../elements/portfolio/PortfolioList";
 import ServiceList from "../elements/service/ServiceList";
 import Particles from "react-particles-js";
 import BrandTwo from "./BrandTwo";
-import avatar from '../assets/images/about/avatar.jpg'
+import avatar from "../assets/images/about/avatar.jpg";
+import myPDF from "../assets/Othman_CV.pdf";
 
 const SlideList = [
   {
@@ -19,8 +20,8 @@ const SlideList = [
     category: "Welcome to my World",
     description: "",
     buttonText: "",
-    buttonLink: ""
-  }
+    buttonLink: "",
+  },
 ];
 const PortfolioLanding = () => {
   let title = "About Me",
@@ -48,58 +49,58 @@ const PortfolioLanding = () => {
                   height: "100%",
                   position: "absolute",
                   top: "0",
-                  left: "0"
+                  left: "0",
                 }}
                 params={{
                   particles: {
                     number: {
                       value: 170,
                       density: {
-                        enable: false
-                      }
+                        enable: false,
+                      },
                     },
                     size: {
                       value: 2,
                       random: true,
                       anim: {
                         speed: 4,
-                        size_min: 0.3
-                      }
+                        size_min: 0.3,
+                      },
                     },
                     line_linked: {
-                      enable: false
+                      enable: false,
                     },
                     move: {
                       random: true,
                       speed: 0.5,
                       direction: "top",
-                      out_mode: "out"
-                    }
+                      out_mode: "out",
+                    },
                   },
                   interactivity: {
                     events: {
                       onhover: {
                         enable: true,
-                        mode: "bubble"
+                        mode: "bubble",
                       },
                       onclick: {
                         enable: true,
-                        mode: "repulse"
-                      }
+                        mode: "repulse",
+                      },
                     },
                     modes: {
                       bubble: {
                         distance: 250,
                         duration: 2,
                         size: 0,
-                        opacity: 0
+                        opacity: 0,
                       },
                       repulse: {
                         distance: 400,
-                        duration: 4
-                      }
-                    }
-                  }
+                        duration: 4,
+                      },
+                    },
+                  },
                 }}
               />
               <div className="container">
@@ -117,7 +118,24 @@ const PortfolioLanding = () => {
                           <span> Designer.</span>
                         </TextLoop>{" "}
                       </h1>
-                      <h2>Based in Iraq.</h2>
+                      <button
+                        style={{
+                          color: "white",
+                          border: "2px solid white",
+                          marginTop: "12px",
+                        }}
+                        class="rn-btn btn-solid"
+                      >
+                        <a
+                          style={{
+                            color: "white",
+                          }}
+                          href={myPDF}
+                          download="Othman_CV.pdf"
+                        >
+                          Download CV
+                        </a>
+                      </button>
                       {value.description ? (
                         <p className="description">{value.description}</p>
                       ) : (
