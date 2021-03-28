@@ -123,6 +123,7 @@ const PortfolioLanding = () => {
                           color: "white",
                           border: "2px solid white",
                           marginTop: "12px",
+                          marginBottom: "50px",
                         }}
                         class="rn-btn btn-solid"
                       >
