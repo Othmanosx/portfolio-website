@@ -104,7 +104,12 @@ const PortfolioLanding = () => {
                   },
                 }}
               />
-              <div className="container">
+              <div
+                className="container"
+                style={{
+                  pointerEvents: "none",
+                }}
+              >
                 <div className="row">
                   <div className="col-lg-12">
                     <div className={`inner ${value.textPosition}`}>
