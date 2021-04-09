@@ -125,6 +125,7 @@ const PortfolioLanding = () => {
                           border: "2px solid white",
                           marginTop: "12px",
                           marginBottom: "50px",
+                          pointerEvents: "all",
                         }}
                         class="rn-btn btn-solid"
                       >
