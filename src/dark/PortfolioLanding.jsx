@@ -54,13 +54,13 @@ const PortfolioLanding = () => {
                 params={{
                   particles: {
                     number: {
-                      value: 170,
+                      value: 200,
                       density: {
                         enable: false,
                       },
                     },
                     size: {
-                      value: 2,
+                      value: 2.5,
                       random: true,
                       anim: {
                         speed: 4,
@@ -78,10 +78,11 @@ const PortfolioLanding = () => {
                     },
                   },
                   interactivity: {
+                    detect_on: "canvas",
                     events: {
                       onhover: {
                         enable: true,
-                        mode: "bubble",
+                        mode: "repulse",
                       },
                       onclick: {
                         enable: true,
@@ -96,7 +97,7 @@ const PortfolioLanding = () => {
                         opacity: 0,
                       },
                       repulse: {
-                        distance: 400,
+                        distance: 150,
                         duration: 4,
                       },
                     },
