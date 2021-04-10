@@ -59,7 +59,7 @@ const ServiceList = [
     description:
       "I value simple content structure, clean design patterns, and thoughtful interactions.",
     things: "UI, Web, Apps, Photos, Logos",
-    tools: "Photoshop, Illustrator, Affinity, Figma, Pen & Paper"
+    tools: "Photoshop, Illustrator, Affinity, Figma, Pen & Paper",
   },
   {
     icon: WebLogo,
@@ -67,7 +67,7 @@ const ServiceList = [
     description:
       "I like to code things from scratch, and enjoy bringing ideas to life in the browser.",
     things: "HTML, CSS, Javascript, Python",
-    tools: "VSCode ,React ,Angular, Redux, Codesandbox, Github"
+    tools: "VSCode ,React ,Angular, Redux, Codesandbox, Github",
   },
   {
     icon: EngLogo,
@@ -75,8 +75,8 @@ const ServiceList = [
     description:
       "I love inventing and making things, from designing to modelling to prototype building",
     things: "Building, fixing, Designing",
-    tools: "AutoCAD, SolidWorks, Pen & Paper, ToolBox"
-  }
+    tools: "AutoCAD, SolidWorks, Pen & Paper, ToolBox",
+  },
 ];
 
 class ServiceThree extends Component {
@@ -89,21 +89,21 @@ class ServiceThree extends Component {
         <div className="row">
           {ServiceContent.map((val, i) => (
             <div className={`${column}`} key={i}>
-              <a href="/service-details">
-                <div className="service service__style--2">
-                  <center>
-                    <div className="icon">{val.icon}</div>
-                    <div className="content">
-                      <h3 className="title">{val.title}</h3>
-                      <p>{val.description}</p>
-                      <h4 className="title">Things I enjoy doing</h4>
-                      <p>{val.things}</p>
-                      <h4 className="title">Tools I use</h4>
-                      <p>{val.tools}</p>
-                    </div>
-                  </center>
-                </div>
-              </a>
+              {/* <a href="/service-details"> */}
+              <div className="service service__style--2">
+                <center>
+                  <div className="icon">{val.icon}</div>
+                  <div className="content">
+                    <h3 className="title">{val.title}</h3>
+                    <p>{val.description}</p>
+                    <h4 className="title">Things I enjoy doing</h4>
+                    <p>{val.things}</p>
+                    <h4 className="title">Tools I use</h4>
+                    <p>{val.tools}</p>
+                  </div>
+                </center>
+              </div>
+              {/* </a> */}
             </div>
           ))}
         </div>
