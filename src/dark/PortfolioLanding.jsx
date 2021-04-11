@@ -116,7 +116,7 @@ const PortfolioLanding = () => {
                       {value.category ? <span>{value.category}</span> : ""}
                       <h1 className="title">
                         Hi, I’m Othman <br />
-                        <TextLoop>
+                        <TextLoop interval={1500}>
                           <span> Web Developer.</span>
                           <span> Engineer.</span>
                           <span> Content Writter.</span>
