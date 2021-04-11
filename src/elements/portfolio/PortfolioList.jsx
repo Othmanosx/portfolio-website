@@ -7,12 +7,15 @@ const PortfolioListContent = [
     title: "Weather App",
     link: "https://weather-app-othman.netlify.app/",
     repo: "https://github.com/Othmanosx/weather_app_js",
+    info:
+      "Weather forecasts over a 6 day period updated each day for more than 2000 cities in the world.",
   },
   {
     image: "image-2",
     category: "Javascript",
     title: "iTECH Website",
     link: "https://www.itechnopro.com/",
+    info: "Technology blog with news, tips and tricks about mobile devices",
   },
   {
     image: "image-3",
@@ -20,12 +23,14 @@ const PortfolioListContent = [
     title: "Hangman Game",
     link: "https://hangman-sand-team.netlify.app/",
     repo: "https://github.com/Othmanosx/hangman_react_js",
+    info: "Word guessing game created using ReactJS",
   },
   {
     image: "image-4",
     category: "Javascript",
     title: "iTECH APPS",
     link: "https://www.itechnoapps.com/",
+    info: "Apps and games web store for iPhones and iPads",
   },
   {
     image: "image-5",
@@ -33,6 +38,7 @@ const PortfolioListContent = [
     title: "FindYours (in development)",
     link: "",
     repo: "https://github.com/murtaja1/find_yours",
+    info: "A platform to help people post and find their missing stuff online",
   },
 ];
 
@@ -56,6 +62,15 @@ class PortfolioList extends Component {
                     <a href={value.link} rel="noreferrer" target="_blank">
                       {value.title}
                     </a>
+                    <div
+                      style={{
+                        fontSize: "12px",
+                        lineHeight: "normal",
+                        color: "rgb(219, 219, 219)",
+                      }}
+                    >
+                      {value.info}
+                    </div>
                   </h4>
                   <div className="postButtons">
                     {value.link ? (
