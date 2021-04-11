@@ -39,9 +39,9 @@ class TabsTwo extends Component {
                           <a href="#service">
                             Web and user interface design<span> - Design</span>
                           </a>
-                          I have experience building UI, Web, Apps, Photos,
-                          Logos", tools: "Photoshop, Illustrator, Affinity,
-                          Figma, Pen {"&"} Paper
+                          I have experience building UI, Websites, Apps, Photos,
+                          Logos with tools like Photoshop, Illustrator,
+                          Affinity, Figma, Pen {"&"} Paper
                         </li>
                         <li>
                           <a href="#service">
