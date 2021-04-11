@@ -27,23 +27,29 @@ class TabsTwo extends Component {
                     <div className="single-tab-content">
                       <ul>
                         <li>
-                          <a href="/service">
+                          <a href="#service">
                             Web Development <span> - Development</span>
                           </a>
                           Build websites and web apps using javascript and it's
-                          frameworks.
+                          frameworks. I use technologies like HTML, CSS,
+                          Javascript, Python, and tools like: VSCode ,React JS
+                          ,Angular, Redux, Codesandbox, Github
                         </li>
                         <li>
-                          <a href="/service">
+                          <a href="#service">
                             Web and user interface design<span> - Design</span>
                           </a>
-                          Websites, web experiences, ...
+                          I have experience building UI, Web, Apps, Photos,
+                          Logos", tools: "Photoshop, Illustrator, Affinity,
+                          Figma, Pen {"&"} Paper
                         </li>
                         <li>
-                          <a href="/service">
+                          <a href="#service">
                             Mechanical Engineering <span> - Engineering</span>
                           </a>
-                          Mechanical design, problem solving, ...
+                          Mechanical Design, Problem Solving, Building, Fixing,
+                          Designing. I use tools like AutoCAD, SolidWorks, Pen
+                          {"&"} Paper, ToolBox.
                         </li>
                       </ul>
                     </div>
