@@ -110,24 +110,38 @@ class TabsTwo extends Component {
                       <ul>
                         <li>
                           <a href="/service">
-                            BSc In Mechanical Engineering
-                            <span> - Mosul University, Iraq</span>
+                            Mechanical Engineering
+                            <span> - Mosul University, Iraq, 2019</span>
                           </a>{" "}
-                          2019
+                          Bachelor's degree in applied science from the collage
+                          of mechanical engineering in Mosul, Iraq.
                         </li>
                         <li>
                           <a href="/service">
                             Full-Stack web development certification
-                            <span> - Kodluyoruz, Turkey</span>
+                            <span> - Kodluyoruz, Turkey, 2021</span>
                           </a>{" "}
-                          2021
+                          In-depth 2-month-long full-stack coding bootcamp in
+                          Turkey with technologies like Python, Javascript and
+                          Angular.
                         </li>
                         <li>
                           <a href="/service">
                             React Development certification
-                            <span> - Re:Coded, IQ</span>
+                            <span> - Re:Coded, Iraq, 2021</span>
                           </a>{" "}
-                          2021
+                          Immersive 5-month-long course, with over 400 hours of
+                          coding and an acceptance rate of {"<6%"}.<br />
+                          HTML, CSS, Javascript, React Additional Coursework on
+                          teamwork, project management, agile methodologies and
+                          technologies and tools like Redux state management
+                          library, Firebase Firestore Cloud database, Jest
+                          testing framework, Figma prototype and UX/ UI design
+                          tool, continuous integration and Agile software
+                          development. Designed user interfaces using Figma and
+                          converted sketches and wireframes to functional
+                          reusable UI components using React JavaScript. Built
+                          projects from zero to production level.
                         </li>
                       </ul>
                     </div>
