@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from "react"
 
 const PortfolioListContent = [
   {
@@ -35,17 +35,17 @@ const PortfolioListContent = [
   {
     image: "image-5",
     category: "React JS",
-    title: "FindYours (in development)",
-    link: "",
+    title: "FindYours",
+    link: "https://findyours.netlify.app",
     repo: "https://github.com/murtaja1/find_yours",
     info: "A platform to help people post and find their missing stuff online",
   },
-];
+]
 
 class PortfolioList extends Component {
   render() {
-    const { column, styevariation } = this.props;
-    const list = PortfolioListContent.slice(0, this.props.item);
+    const { column, styevariation } = this.props
+    const list = PortfolioListContent.slice(0, this.props.item)
     return (
       <React.Fragment>
         {list.map((value, index) => (
@@ -104,7 +104,7 @@ class PortfolioList extends Component {
           </div>
         ))}
       </React.Fragment>
-    );
+    )
   }
 }
-export default PortfolioList;
+export default PortfolioList
