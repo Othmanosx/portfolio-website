@@ -2,20 +2,20 @@ import React, { Component } from "react"
 
 const PortfolioListContent = [
   {
+    image: "image-5",
+    category: "React JS",
+    title: "FindYours",
+    link: "https://findyours.netlify.app",
+    repo: "https://github.com/murtaja1/find_yours",
+    info: "A platform to help people post and find their missing stuff online",
+  },
+  {
     image: "image-1",
     category: "React JS",
     title: "Weather App",
     link: "https://weather-app-othman.netlify.app/",
     repo: "https://github.com/Othmanosx/weather_app_js",
-    info:
-      "Weather forecasts over a 6 day period updated each day for more than 2000 cities in the world.",
-  },
-  {
-    image: "image-2",
-    category: "Javascript",
-    title: "iTECH Website",
-    link: "https://www.itechnopro.com/",
-    info: "Technology blog with news, tips and tricks about mobile devices",
+    info: "Weather forecasts over a 6 day period updated each day for more than 2000 cities in the world.",
   },
   {
     image: "image-3",
@@ -26,19 +26,11 @@ const PortfolioListContent = [
     info: "Word guessing game created using ReactJS",
   },
   {
-    image: "image-4",
+    image: "image-2",
     category: "Javascript",
-    title: "iTECH APPS",
-    link: "https://www.itechnoapps.com/",
-    info: "Apps and games web store for iPhones and iPads",
-  },
-  {
-    image: "image-5",
-    category: "React JS",
-    title: "FindYours",
-    link: "https://findyours.netlify.app",
-    repo: "https://github.com/murtaja1/find_yours",
-    info: "A platform to help people post and find their missing stuff online",
+    title: "iTECH Website",
+    link: "https://www.itechnopro.com/",
+    info: "Technology blog with news, tips and tricks about mobile devices",
   },
 ]
 
