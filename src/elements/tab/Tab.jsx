@@ -26,18 +26,19 @@ class TabsTwo extends Component {
                           <a href="#service">
                             Web Development <span> - Development</span>
                           </a>
-                          Build websites and web apps using javascript and it's
-                          frameworks. I use technologies like HTML, CSS,
-                          Javascript, Python, and tools like: VSCode ,React JS
-                          ,Angular, Redux, Codesandbox, Github
+                          Build websites and web apps using javascript,
+                          typescript and their frameworks. I use technologies
+                          like HTML, CSS, Javascript, typescript, and tools
+                          like: VSCode ,React JS ,Next JS, Redux, Mongodb, Git,
+                          Github, Vite, and more.
                         </li>
                         <li>
                           <a href="#service">
                             Web and user interface design<span> - Design</span>
                           </a>
                           I have experience building UI, Websites, Apps, Photos,
-                          Logos with tools like Photoshop, Illustrator,
-                          Affinity, Figma, Pen {"&"} Paper
+                          Logos with tools like Photoshop, Illustrator, Figma,
+                          Pen {"&"} Paper
                         </li>
                         <li>
                           <a href="#service">

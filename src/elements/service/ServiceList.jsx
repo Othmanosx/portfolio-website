@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from "react"
 // import { FiCast, FiLayers, FiUsers } from "react-icons/fi";
 // import DesignLogo from "../../dark/designer.svg";
 let DesignLogo = (
@@ -8,7 +8,7 @@ let DesignLogo = (
       id="designer"
     ></path>
   </svg>
-);
+)
 let EngLogo = (
   <svg
     id="Capa_1"
@@ -33,7 +33,7 @@ let EngLogo = (
       </g>
     </g>
   </svg>
-);
+)
 let WebLogo = (
   <svg width="50px" height="48px" viewBox="0 0 50 48" version="1.1">
     <g
@@ -50,7 +50,7 @@ let WebLogo = (
       ></path>
     </g>
   </svg>
-);
+)
 
 const ServiceList = [
   {
@@ -59,15 +59,16 @@ const ServiceList = [
     description:
       "I value simple content structure, clean design patterns, and thoughtful interactions.",
     things: "UI, Web, Apps, Photos, Logos",
-    tools: "Photoshop, Illustrator, Affinity, Figma, Pen & Paper",
+    tools: "Photoshop, Illustrator, Figma, Pen & Paper",
   },
   {
     icon: WebLogo,
     title: "Web Development",
     description:
       "I like to code things from scratch, and enjoy bringing ideas to life in the browser.",
-    things: "HTML, CSS, Javascript, Python",
-    tools: "VSCode ,React ,Angular, Redux, Codesandbox, Github",
+    things: "HTML, CSS, Javascript, Typescript",
+    tools:
+      "VSCode ,React JS ,Next JS, Redux, Mongodb, Material UI, Bootstrap, Git, Github, Vite",
   },
   {
     icon: EngLogo,
@@ -77,12 +78,12 @@ const ServiceList = [
     things: "Building, fixing, Designing",
     tools: "AutoCAD, SolidWorks, Pen & Paper, ToolBox",
   },
-];
+]
 
 class ServiceThree extends Component {
   render() {
-    const { column } = this.props;
-    const ServiceContent = ServiceList.slice(0, this.props.item);
+    const { column } = this.props
+    const ServiceContent = ServiceList.slice(0, this.props.item)
 
     return (
       <React.Fragment>
@@ -108,7 +109,7 @@ class ServiceThree extends Component {
           ))}
         </div>
       </React.Fragment>
-    );
+    )
   }
 }
-export default ServiceThree;
+export default ServiceThree
