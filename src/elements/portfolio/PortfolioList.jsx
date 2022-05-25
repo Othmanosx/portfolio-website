@@ -2,8 +2,23 @@ import React, { Component } from "react"
 
 const PortfolioListContent = [
   {
+    image: "image-7",
+    category: "React JS, Javascript, Material UI, Redux",
+    title: "MyTV+ Ads",
+    link: "https://mytvadz.com",
+    info: "An enterprise grade advertisement platform for businesses to create and manage their own advertisement campaigns.",
+  },
+  {
+    image: "image-4",
+    category:
+      "Next JS, Typescript, Nodejs, Mongodb, Bootstrap, Redux, Firebase, PWA",
+    title: "Appollow",
+    link: "https://appollow.net",
+    info: "A PWA website and mobile app to help people share and find discounted apps and games.",
+  },
+  {
     image: "image-5",
-    category: "React JS",
+    category: "React JS, Javascript, Material UI, Context API",
     title: "FindYours",
     link: "https://findyours.netlify.app",
     repo: "https://github.com/murtaja1/find_yours",
@@ -11,7 +26,7 @@ const PortfolioListContent = [
   },
   {
     image: "image-1",
-    category: "React JS",
+    category: "React JS , Javascript, HTML, CSS",
     title: "Weather App",
     link: "https://weather-app-othman.netlify.app/",
     repo: "https://github.com/Othmanosx/weather_app_js",
@@ -19,7 +34,7 @@ const PortfolioListContent = [
   },
   {
     image: "image-3",
-    category: "React JS",
+    category: "React JS, Javascript, HTML, CSS",
     title: "Hangman Game",
     link: "https://hangman-sand-team.netlify.app/",
     repo: "https://github.com/Othmanosx/hangman_react_js",
@@ -27,7 +42,7 @@ const PortfolioListContent = [
   },
   {
     image: "image-2",
-    category: "Javascript",
+    category: "Javascript, HTML, CSS, Blogger CMS",
     title: "iTECH Website",
     link: "https://www.itechnopro.com/",
     info: "Technology blog with news, tips and tricks about mobile devices",
