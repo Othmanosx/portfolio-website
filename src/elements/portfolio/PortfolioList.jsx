@@ -13,7 +13,7 @@ const PortfolioListContent = [
     category:
       "Next JS, Typescript, Nodejs, Mongodb, Bootstrap, Redux, Firebase, PWA",
     title: "Appollow",
-    link: "https://appollow.net",
+    link: "https://www.appollow.net",
     info: "A PWA website and mobile app to help people share and find discounted apps and games.",
   },
   {
