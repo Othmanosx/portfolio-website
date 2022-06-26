@@ -17,6 +17,13 @@ const PortfolioListContent = [
     info: "A PWA website and mobile app to help people share and find discounted apps and games.",
   },
   {
+    image: "image-10",
+    category: "HTML, CSS",
+    title: "Appollow Teaser",
+    link: "https://appollow-teaser.vercel.app/",
+    info: "A teaser website for Appollow built with HTML and CSS with some animations.",
+  },
+  {
     image: "image-5",
     category: "React JS, Javascript, Material UI, Context API",
     title: "FindYours",
