@@ -68,7 +68,7 @@ const ServiceList = [
       "I like to code things from scratch, and enjoy bringing ideas to life in the browser.",
     things: "HTML, CSS, Javascript, Typescript",
     tools:
-      "VSCode ,React JS ,Next JS, Redux, Mongodb, Material UI, Bootstrap, Git, Github, Vite",
+      "VSCode ,React JS ,Next JS, Redux, Mongodb, Material UI, Bootstrap, Git, Github, Vite, GraphQL",
   },
   {
     icon: EngLogo,

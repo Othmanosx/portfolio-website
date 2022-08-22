@@ -24,6 +24,23 @@ const PortfolioListContent = [
     info: "A teaser website for Appollow built with HTML and CSS with some animations.",
   },
   {
+    image: "image-11",
+    category:
+      "Next JS, Typescript, GraphQL, Apollo, Web 3, Chakra UI, BigNumberjs, Framer-Motion",
+    title: "GraphQL Web 3",
+    link: "https://hal-othman.vercel.app/",
+    repo: "https://github.com/Othmanosx/hal-web3-graphql",
+    info: "A simple Web 3 app built with GraphQL API",
+  },
+  {
+    image: "image-12",
+    category: "TypeScript, Nextjs, Firebase, SASS",
+    title: "Fullstack E-commerce POC",
+    link: "https://bejamas-othman.vercel.app/",
+    repo: "https://github.com/Othmanosx/bejamas-ecommerce-poc",
+    info: "A simple Fullstack E-Commerce proof of concept",
+  },
+  {
     image: "image-5",
     category: "React JS, Javascript, Material UI, Context API",
     title: "FindYours",
@@ -59,7 +76,7 @@ const PortfolioListContent = [
 class PortfolioList extends Component {
   render() {
     const { column, styevariation } = this.props
-    const list = PortfolioListContent.slice(0, this.props.item)
+    const list = PortfolioListContent
     return (
       <React.Fragment>
         {list.map((value, index) => (
