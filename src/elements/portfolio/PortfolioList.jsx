@@ -2,7 +2,7 @@ import React, { Component } from "react"
 
 const PortfolioListContent = [
   {
-    image: "image-7",
+    image: "image-8",
     category: "Next JS, Javascript, Bootstrap, Redux Toolkit",
     title: "Monovat",
     link: "https://monovat.vercel.app/",
