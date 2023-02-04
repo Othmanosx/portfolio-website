@@ -3,6 +3,13 @@ import React, { Component } from "react"
 const PortfolioListContent = [
   {
     image: "image-7",
+    category: "Next JS, Javascript, Bootstrap, Redux Toolkit",
+    title: "Monovat",
+    link: "https://monovat.vercel.app/",
+    info: "A landing page for a dental supplies and medical 3D printers company",
+  },
+  {
+    image: "image-7",
     category: "React JS, Javascript, Material UI, Redux",
     title: "MyTV+ Ads",
     link: "https://mytvadz.com",
