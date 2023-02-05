@@ -215,6 +215,30 @@ const PortfolioLanding = () => {
       </div>
       {/* End Portfolio Area */}
 
+      {/* Start Service Area  */}
+      <div id="service" className="fix">
+        <div className="service-area creative-service-wrapper ptb--120 bg_color--5">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-12">
+                <div className="section-title text-center service-style--3 mb--30 mb_sm--0">
+                  <h2 className="title">Services</h2>
+                </div>
+              </div>
+            </div>
+            <div className="row creative-service">
+              <div className="col-lg-12">
+                <ServiceList
+                  item="3"
+                  column="col-lg-4 col-md-6 col-sm-6 col-12 text-left"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* End Service Area  */}
+
       {/* Start About Area */}
       <div id="about" className="fix">
         <div className="about-area ptb--120  bg_color--1">
@@ -255,30 +279,6 @@ const PortfolioLanding = () => {
       </div>
 
       {/* End About Area */}
-
-      {/* Start Service Area  */}
-      <div id="service" className="fix">
-        <div className="service-area creative-service-wrapper ptb--120 bg_color--5">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-12">
-                <div className="section-title text-center service-style--3 mb--30 mb_sm--0">
-                  <h2 className="title">Services</h2>
-                </div>
-              </div>
-            </div>
-            <div className="row creative-service">
-              <div className="col-lg-12">
-                <ServiceList
-                  item="3"
-                  column="col-lg-4 col-md-6 col-sm-6 col-12 text-left"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* End Service Area  */}
 
       {/* Start Blog Area */}
       {/* <div id="blog" className="fix">
