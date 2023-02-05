@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import { event } from "../../utils/gtag"
 
 const PortfolioListContent = [
   {
@@ -115,17 +116,31 @@ class PortfolioList extends Component {
                       <div className="portfolio-button">
                         <a
                           className="rn-btn"
+                          onClick={() =>
+                            event({
+                              action: "live_click_" + value.title,
+                              category: "projects",
+                              label: "open project link" + value.title,
+                            })
+                          }
                           href={value.link}
                           rel="noreferrer"
                           target="_blank"
                         >
-                          Live
+                          Live demo
                         </a>
                       </div>
                     ) : null}
                     {value.repo ? (
                       <div className="portfolio-button">
                         <a
+                          onClick={() =>
+                            event({
+                              action: "repo_click_" + value.title,
+                              category: "projects",
+                              label: "open project repo" + value.title,
+                            })
+                          }
                           className="rn-btn"
                           href={value.repo}
                           rel="noreferrer"

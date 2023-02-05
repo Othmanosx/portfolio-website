@@ -9,13 +9,34 @@ import {
 import { FiX, FiMenu } from "react-icons/fi"
 import Scrollspy from "react-scrollspy"
 import logo from "../../assets/images/logo/logo.svg"
+import { event } from "../../utils/gtag"
 
 const SocialShare = [
-  { Social: <FaFacebookF />, link: "https://www.facebook.com/iothmanosx" },
-  { Social: <FaLinkedinIn />, link: "https://www.linkedin.com/in/othmanosx" },
-  { Social: <FaInstagram />, link: "https://www.instagram.com/othmanosx" },
-  { Social: <FaTwitter />, link: "https://twitter.com/othmanosx" },
-  { Social: <FaGithub />, link: "https://github.com/othmanosx" },
+  {
+    title: "Facebook",
+    Social: <FaFacebookF />,
+    link: "https://www.facebook.com/iothmanosx",
+  },
+  {
+    title: "LinkedinIn",
+    Social: <FaLinkedinIn />,
+    link: "https://www.linkedin.com/in/othmanosx",
+  },
+  {
+    title: "Instagram",
+    Social: <FaInstagram />,
+    link: "https://www.instagram.com/othmanosx",
+  },
+  {
+    title: "Twitter",
+    Social: <FaTwitter />,
+    link: "https://twitter.com/othmanosx",
+  },
+  {
+    title: "Github",
+    Social: <FaGithub />,
+    link: "https://github.com/othmanosx",
+  },
 ]
 class Header extends Component {
   constructor(props) {
@@ -85,19 +106,69 @@ class Header extends Component {
                 offset={-200}
               >
                 <li>
-                  <a href="#home">Home</a>
+                  <a
+                    href="#home"
+                    onClick={() =>
+                      event({
+                        action: "home_nav_click",
+                        category: "navigation",
+                      })
+                    }
+                  >
+                    Home
+                  </a>
                 </li>
                 <li>
-                  <a href="#about">About</a>
+                  <a
+                    href="#about"
+                    onClick={() =>
+                      event({
+                        action: "about_nav_click",
+                        category: "navigation",
+                      })
+                    }
+                  >
+                    About
+                  </a>
                 </li>
                 <li>
-                  <a href="#service">Service</a>
+                  <a
+                    href="#service"
+                    onClick={() =>
+                      event({
+                        action: "service_nav_click",
+                        category: "navigation",
+                      })
+                    }
+                  >
+                    Service
+                  </a>
                 </li>
                 <li>
-                  <a href="#portfolio">Portfolio</a>
+                  <a
+                    href="#portfolio"
+                    onClick={() =>
+                      event({
+                        action: "portfolio_nav_click",
+                        category: "navigation",
+                      })
+                    }
+                  >
+                    Portfolio
+                  </a>
                 </li>
                 <li>
-                  <a href="#contact">Contact</a>
+                  <a
+                    href="#contact"
+                    onClick={() =>
+                      event({
+                        action: "contact_nav_click",
+                        category: "navigation",
+                      })
+                    }
+                  >
+                    Contact
+                  </a>
                 </li>
               </Scrollspy>
             </nav>
@@ -107,7 +178,17 @@ class Header extends Component {
               <ul className="social-share social-style--2 color-black d-flex justify-content-start liststyle">
                 {SocialShare.map((val, i) => (
                   <li key={i}>
-                    <a href={`${val.link}`}>{val.Social}</a>
+                    <a
+                      href={`${val.link}`}
+                      onClick={() =>
+                        event({
+                          action: "social_nav_click_" + val.title,
+                          category: "social links",
+                        })
+                      }
+                    >
+                      {val.Social}
+                    </a>
                   </li>
                 ))}
               </ul>

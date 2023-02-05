@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs"
+import { event } from "../../utils/gtag"
 
 class TabsTwo extends Component {
   render() {
@@ -15,8 +16,30 @@ class TabsTwo extends Component {
               <div className="col-lg-12">
                 <Tabs>
                   <TabList className={`${tabStyle}`}>
-                    <Tab>{tab1}</Tab>
-                    <Tab>{tab2}</Tab>
+                    <Tab>
+                      <div
+                        onClick={() =>
+                          event({
+                            action: "main_skills_tab_click",
+                            category: "portfolio",
+                          })
+                        }
+                      >
+                        {tab1}
+                      </div>
+                    </Tab>
+                    <Tab>
+                      <div
+                        onClick={() =>
+                          event({
+                            action: "edu_cert_tab_click",
+                            category: "portfolio",
+                          })
+                        }
+                      >
+                        {tab2}
+                      </div>
+                    </Tab>
                   </TabList>
 
                   <TabPanel>

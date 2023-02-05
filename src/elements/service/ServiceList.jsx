@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import { event } from "../../utils/gtag"
 // import { FiCast, FiLayers, FiUsers } from "react-icons/fi";
 // import DesignLogo from "../../dark/designer.svg";
 let DesignLogo = (
@@ -89,7 +90,16 @@ class ServiceThree extends Component {
       <React.Fragment>
         <div className="row">
           {ServiceContent.map((val, i) => (
-            <div className={`${column}`} key={i}>
+            <div
+              className={`${column}`}
+              key={i}
+              onClick={() =>
+                event({
+                  action: "services_click_" + val.title,
+                  category: "services",
+                })
+              }
+            >
               {/* <a href="/service-details"> */}
               <div className="service service__style--2">
                 <center>
