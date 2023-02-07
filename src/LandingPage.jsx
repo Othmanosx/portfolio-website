@@ -14,6 +14,7 @@ import Brand from "./components/brands/Brands"
 import avatar from "./assets/images/about/avatar.jpg"
 import myPDF from "./assets/Othman_CV.pdf"
 import { event } from "./utils/gtag"
+import HotJar from "./components/HotJar"
 
 const SlideList = [
   {
@@ -32,7 +33,7 @@ const PortfolioLanding = () => {
   return (
     <div className="active-dark">
       <Helmet pageTitle="Othman" />
-
+      <HotJar />
       <Header homeLink="/" logo="symbol-dark" color="color-black" />
 
       {/* Start Slider Area   */}
