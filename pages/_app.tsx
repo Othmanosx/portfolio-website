@@ -9,16 +9,18 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <div>
       <Head>
-        <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+        <title>Othman | Frontend Developer</title>
+        <meta
+          name="description"
+          content="Senior React Frontend Web Developer, I like to build beautiful websites and web apps"
+        />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="shortcut icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
 
-        <meta property="og:title" content="Othman Shareef" />
-        <meta
-          name="image"
-          property="og:image"
-          content="%PUBLIC_URL%/portfolio.JPG"
-        />
+        <meta property="og:title" content="Othman | Frontend Developer" />
+        <meta name="image" property="og:image" content="/portfolio.JPG" />
         <meta name="author" content="Othman Shareef" />
         <meta
           property="og:description"
@@ -45,9 +47,8 @@ export default function App({ Component, pageProps }: AppProps) {
         />
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
         <meta name="msapplication-TileColor" content="#da532c" />
-        <meta name="theme-color" content="#ffffff" />
 
-        <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+        <link rel="manifest" href="/manifest.json" />
       </Head>
       <Script
         src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
