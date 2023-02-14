@@ -1499,37 +1499,37 @@ ul.social-share.social-style--2.color-black li a:hover {
   z-index: 4;
 }
 .portfolio .thumbnail.image-1 {
-  background-image: url(../assets/images/portfolio/portfolio-1.jpg);
+  background-image: url(/assets/images/portfolio/portfolio-1.jpg);
 }
 .portfolio .thumbnail.image-2 {
-  background-image: url(../assets/images/portfolio/portfolio-2.jpg);
+  background-image: url(/assets/images/portfolio/portfolio-2.jpg);
 }
 .portfolio .thumbnail.image-3 {
-  background-image: url(../assets/images/portfolio/portfolio-3.jpg);
+  background-image: url(/assets/images/portfolio/portfolio-3.jpg);
 }
 .portfolio .thumbnail.image-4 {
-  background-image: url(../assets/images/portfolio/portfolio-4.jpg);
+  background-image: url(/assets/images/portfolio/portfolio-4.jpg);
 }
 .portfolio .thumbnail.image-5 {
-  background-image: url(../assets/images/portfolio/portfolio-5.jpg);
+  background-image: url(/assets/images/portfolio/portfolio-5.jpg);
 }
 .portfolio .thumbnail.image-6 {
-  background-image: url(../assets/images/portfolio/portfolio-6.jpg);
+  background-image: url(/assets/images/portfolio/portfolio-6.jpg);
 }
 .portfolio .thumbnail.image-7 {
-  background-image: url(../assets/images/portfolio/portfolio-7.jpg);
+  background-image: url(/assets/images/portfolio/portfolio-7.jpg);
 }
 .portfolio .thumbnail.image-8 {
-  background-image: url(../assets/images/portfolio/portfolio-8.jpeg);
+  background-image: url(/assets/images/portfolio/portfolio-8.jpeg);
 }
 .portfolio .thumbnail.image-10 {
-  background-image: url(../assets/images/portfolio/portfolio-10.jpg);
+  background-image: url(/assets/images/portfolio/portfolio-10.jpg);
 }
 .portfolio .thumbnail.image-11 {
-  background-image: url(../assets/images/portfolio/portfolio-11.png);
+  background-image: url(/assets/images/portfolio/portfolio-11.png);
 }
 .portfolio .thumbnail.image-12 {
-  background-image: url(../assets/images/portfolio/portfolio-12.jpg);
+  background-image: url(/assets/images/portfolio/portfolio-12.jpg);
 }
 .portfolio .thumbnail:after {
   background-color: rgba(45, 45, 45, 0.35);
@@ -1565,16 +1565,16 @@ ul.social-share.social-style--2.color-black li a:hover {
   z-index: 1;
 }
 .portfolio .bg-blr-image.image-1 {
-  background-image: url(../assets/images/portfolio/portfolio-1.jpg);
+  background-image: url(/assets/images/portfolio/portfolio-1.jpg);
 }
 .portfolio .bg-blr-image.image-2 {
-  background-image: url(../assets/images/portfolio/portfolio-2.jpg);
+  background-image: url(/assets/images/portfolio/portfolio-2.jpg);
 }
 .portfolio .bg-blr-image.image-3 {
-  background-image: url(../assets/images/portfolio/portfolio-1.jpg);
+  background-image: url(/assets/images/portfolio/portfolio-1.jpg);
 }
 .portfolio .bg-blr-image.image-4 {
-  background-image: url(../assets/images/portfolio/portfolio-5.jpg);
+  background-image: url(/assets/images/portfolio/portfolio-5.jpg);
 }
 .portfolio .content {
   position: absolute;
@@ -2386,7 +2386,7 @@ ul.tab-style--1 li:before {
 }
 .active-dark .bg_image--25 {
   background-color: #101010;
-  background-image: url(../assets/images/bg/portrait.jpg) !important;
+  background-image: url(/assets/images/bg/portrait.jpg) !important;
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
