@@ -66,10 +66,10 @@ const ServiceList = [
     icon: WebLogo,
     title: "Web Development",
     description:
-      "I like to code things from scratch, and enjoy bringing ideas to life in the browser.",
+      "I like to code and enjoy bringing ideas to life in the browser.",
     things: "HTML, CSS, Javascript, Typescript",
     tools:
-      "VSCode ,React JS ,Next JS, Redux, Mongodb, Material UI, Bootstrap, Git, Github, Vite, GraphQL",
+      "VSCode ,React JS ,Next JS, Redux, Mongodb, Material UI, Git, Github, Vite, GraphQL, and a lot more",
   },
   {
     icon: EngLogo,
