@@ -12,6 +12,7 @@ import Contact from "@/components/Contact"
 import ServiceList from "@/components/ServiceList"
 import Brand from "@/components/Brands"
 import "bootstrap/dist/css/bootstrap.css"
+import Image from "next/image"
 
 export default function Home() {
   let title = "About Me",
@@ -25,8 +26,19 @@ export default function Home() {
         {/* Start Hero Area   */}
         <div
           id="home"
-          className="slide personal-portfolio-slider slider-paralax slider-style-3 d-flex align-items-center justify-content-center bg_image bg_image--25"
+          className="slide personal-portfolio-slider slider-paralax slider-style-3 d-flex align-items-center justify-content-center bg_image"
         >
+          <Image
+            src="/assets/images/bg/portrait.jpg"
+            fill
+            style={{
+              backgroundColor: "#101010",
+              backgroundPosition: "50%",
+              backgroundRepeat: "no-repeat",
+              objectFit: "cover",
+            }}
+            alt="personal photo"
+          />
           <Particles />
           <div
             className="container"
