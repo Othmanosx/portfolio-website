@@ -37,6 +37,7 @@ export default function Home() {
               backgroundRepeat: "no-repeat",
               objectFit: "cover",
             }}
+            priority
             alt="personal photo"
           />
           <Particles />
