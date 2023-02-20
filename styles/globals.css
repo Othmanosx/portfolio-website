@@ -1,4 +1,14 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,600,700,800,900|Poppins:300,400,500,600,700,700i&display=swap);
+
+:root {
+  --color-white: #fff;
+  --color-gray: #c4c4c4;
+  --color-black: #000;
+  --color-purple: #8000ff;
+  --color-light-purple: #cf59e6;
+  --color-light-blue: #6bc5f8;
+}
+
 @media only screen and (max-width: 575px) {
   .container {
     width: 450px;
@@ -42,7 +52,7 @@ a:hover {
   outline: 0;
 }
 a:hover {
-  text-decoration: underline;
+  text-decoration: none !important;
 }
 b,
 strong {
@@ -295,17 +305,17 @@ h6 {
 h1,
 h2,
 h3 {
-  font-weight: 700;
+  font-weight: 900 !important;
 }
 .h4,
 .h5,
 h4,
 h5 {
-  font-weight: 600;
+  font-weight: 900 !important;
 }
 .h6,
 h6 {
-  font-weight: 500;
+  font-weight: 700 !important;
 }
 a:active,
 a:focus,
@@ -373,6 +383,7 @@ ul.tab-style--1 {
 .service.service__style--2 .content h3.title,
 .service.service__style--2 .content p,
 .service.service__style--2 .icon,
+.service.service__style--2 .icon path,
 .service.service__style--2:before,
 a.rn-btn,
 button.rn-btn,
@@ -380,6 +391,9 @@ input,
 textarea,
 ul.social-share li a {
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.service.service__style--2:hover .icon path {
+  fill: white;
 }
 .service.service__style--2 {
   position: relative;
@@ -1215,6 +1229,14 @@ textarea:-ms-input-placeholder {
     max-width: 900px !important;
   }
 }
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1320px !important;
+  }
+  .about-container {
+    max-width: 900px !important;
+  }
+}
 .backto-top > div {
   z-index: 999;
   width: 50px;
@@ -1820,7 +1842,7 @@ ul.social-share.social-style--2.color-black li a:hover {
   background: #f6f6f6;
 }
 .slide .inner {
-  padding-top: 100px;
+  padding-top: 70px;
 }
 @media only screen and (max-width: 767px) {
   .slide .inner {
@@ -1914,9 +1936,7 @@ ul.social-share.social-style--2.color-black li a:hover {
     width: 100%;
   }
 }
-.slide.slider-style-3 .inner h1.title span {
-  color: #008bff;
-}
+
 .personal-portfolio-slider {
   position: relative;
 }
@@ -1979,25 +1999,25 @@ ul.social-share.social-style--2.color-black li a:hover {
 }
 @media only screen and (max-width: 767px) {
   .slide.personal-portfolio-slider.slider-style-3 .inner h1.title {
-    font-size: 32px;
-    line-height: 49px;
+    font-size: 35px;
+    line-height: 45px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .slide.personal-portfolio-slider.slider-style-3 .inner h1.title {
-    font-size: 53px;
-    line-height: 70px;
+    font-size: 50px;
+    line-height: 60px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .slide.personal-portfolio-slider.slider-style-3 .inner h1.title {
-    font-size: 58px;
-    line-height: 75px;
+    font-size: 55px;
+    line-height: 65px;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1599px) {
   .slide.personal-portfolio-slider.slider-style-3 .inner h1.title {
-    font-size: 54px;
+    font-size: 65px;
     line-height: 68px;
   }
 }
@@ -2549,4 +2569,64 @@ ul.tab-style--1 li.react-tabs__tab--selected::before {
 
 .pointer-events-all {
   pointer-events: all;
+}
+
+.header__hero--heading {
+  font-size: 5rem;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  font-weight: 900;
+  color: #fff;
+  position: relative;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  to {
+    background-position: 0 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  to {
+    background-position: 0 50%;
+  }
+}
+
+.header__hero--heading-gradient {
+  background: -webkit-linear-gradient(
+    135deg,
+    var(--color-light-blue),
+    var(--color-light-purple),
+    var(--color-light-blue),
+    var(--color-light-purple)
+  );
+  background: linear-gradient(
+    -45deg,
+    var(--color-light-blue),
+    var(--color-light-purple),
+    var(--color-light-blue),
+    var(--color-light-purple)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 400% 400%;
+  -webkit-animation: gradient 3s ease infinite;
+  animation: gradient 3s ease infinite;
 }

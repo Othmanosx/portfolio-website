@@ -49,7 +49,8 @@ class TabsTwo extends Component {
                           <h6>
                             Web Development <span> - Development</span>
                           </h6>
-                          Build websites and web apps using javascript,
+                          I&apos;m primarily a Frontend Engineer, I love
+                          building websites and web apps using javascript,
                           typescript and their frameworks. I use technologies
                           like HTML, CSS, Javascript, typescript, and tools
                           like: VSCode ,React JS ,Next JS, Redux, Mongodb, Git,

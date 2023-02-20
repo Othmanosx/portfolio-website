@@ -16,7 +16,7 @@ import "bootstrap/dist/css/bootstrap.css"
 export default function Home() {
   let title = "About Me",
     description =
-      "Since beginning my journey nearly 5 years ago, I've done remote work for agencies and collaborated with talented people to create digital content for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops one problem at a time."
+      "Since beginning my journey nearly 8 years ago, I've done remote work for agencies and collaborated with talented people to create digital content for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops one problem at a time."
   return (
     <main>
       <div className="active-dark">
@@ -36,28 +36,52 @@ export default function Home() {
           >
             <div className="inner text-left">
               <span>Welcome to my World</span>
-              <h1 className="title">
-                Hi, I’m Othman <br />
-                <span> Web Developer.</span>
+              <h1 className="title header__hero--heading">
+                <span>turning ideas into </span> <br />
+                <span>real life </span>
+                <span className="header__hero--heading-gradient">products</span>
+                <br />
+                <span>is my calling.</span>
               </h1>
-              <button className="rn-btn btn-solid border-white pointer-events-all my-4">
-                <a
-                  style={{
-                    color: "white",
-                  }}
-                  href={"/Othman_CV.pdf"}
-                  onClick={() =>
-                    event({
-                      action: "download_cv",
-                      category: "portfolio",
-                      label: "download CV",
-                    })
-                  }
-                  download="Frontend_Web_Developer_Othman_CV.pdf"
+              <div className="d-flex my-5">
+                <div
+                  role="button"
+                  className="header-area color-black header-btn pointer-events-all"
                 >
-                  Download CV
-                </a>
-              </button>
+                  <a
+                    className="rn-btn"
+                    href={"/Othman_CV.pdf"}
+                    onClick={() =>
+                      event({
+                        action: "download_cv",
+                        category: "hero",
+                        label: "download CV",
+                      })
+                    }
+                    download="Frontend_Web_Developer_Othman_CV.pdf"
+                  >
+                    <span>Download CV</span>
+                  </a>
+                </div>
+                <div
+                  role="button"
+                  className="header-area color-black header-btn pointer-events-all"
+                >
+                  <a
+                    onClick={() =>
+                      event({
+                        action: "view_projects_btn_click",
+                        category: "hero",
+                        label: "View Projects",
+                      })
+                    }
+                    className="rn-btn ml-4"
+                    href="#portfolio"
+                  >
+                    <span>View Projects</span>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>

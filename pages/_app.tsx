@@ -4,10 +4,15 @@ import type { AppProps } from "next/app"
 import Head from "next/head"
 import Script from "next/script"
 import * as gtag from "../utils/gtag"
+import { Poppins } from "@next/font/google"
 
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+})
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <div>
+    <div className={poppins.className}>
       <Head>
         <title>Othman | Frontend Developer</title>
         <meta
