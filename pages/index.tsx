@@ -107,7 +107,7 @@ export default function Home() {
                 <div className="row">
                   <div className="col-lg-12">
                     <div className="section-title text-center service-style--3 mb--30 mb_sm--0">
-                      <h2 className="title">My Latest Projects</h2>
+                      <h2 className="title">Some of my work</h2>
                       <p>
                         Here are a few projects I&apos;ve worked on recently.
                       </p>
@@ -118,7 +118,6 @@ export default function Home() {
                   <PortfolioList
                     styevariation="text-center mt--40"
                     column="col-lg-4 col-md-6 col-sm-6 col-12"
-                    item="6"
                   />
                 </div>
                 {/* <div className="row">
@@ -174,10 +173,12 @@ export default function Home() {
                           <div className="row row--35 align-items-center">
                             <div className="col-md-3">
                               <div className="thumbnail">
-                                <img
+                                <Image
                                   className="w-100"
                                   src={"/avatar.jpg"}
                                   alt="About Images"
+                                  width={170}
+                                  height={158.29}
                                 />
                               </div>
                             </div>
