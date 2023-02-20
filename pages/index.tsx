@@ -12,6 +12,7 @@ import Contact from "@/components/Contact"
 import ServiceList from "@/components/ServiceList"
 import Brand from "@/components/Brands"
 import "bootstrap/dist/css/bootstrap.css"
+import Image from "next/image"
 
 export default function Home() {
   let title = "About Me",
@@ -25,8 +26,19 @@ export default function Home() {
         {/* Start Hero Area   */}
         <div
           id="home"
-          className="slide personal-portfolio-slider slider-paralax slider-style-3 d-flex align-items-center justify-content-center bg_image bg_image--25"
+          className="slide personal-portfolio-slider slider-paralax slider-style-3 d-flex align-items-center justify-content-center bg_image"
         >
+          <Image
+            src="/assets/images/bg/portrait.jpg"
+            fill
+            style={{
+              backgroundColor: "#101010",
+              backgroundPosition: "50%",
+              backgroundRepeat: "no-repeat",
+              objectFit: "cover",
+            }}
+            alt="personal photo"
+          />
           <Particles />
           <div
             className="container"
@@ -95,7 +107,7 @@ export default function Home() {
                 <div className="row">
                   <div className="col-lg-12">
                     <div className="section-title text-center service-style--3 mb--30 mb_sm--0">
-                      <h2 className="title">My Latest Projects</h2>
+                      <h2 className="title">Some of my work</h2>
                       <p>
                         Here are a few projects I&apos;ve worked on recently.
                       </p>
@@ -106,7 +118,6 @@ export default function Home() {
                   <PortfolioList
                     styevariation="text-center mt--40"
                     column="col-lg-4 col-md-6 col-sm-6 col-12"
-                    item="6"
                   />
                 </div>
                 {/* <div className="row">
@@ -162,10 +173,12 @@ export default function Home() {
                           <div className="row row--35 align-items-center">
                             <div className="col-md-3">
                               <div className="thumbnail">
-                                <img
+                                <Image
                                   className="w-100"
                                   src={"/avatar.jpg"}
                                   alt="About Images"
+                                  width={170}
+                                  height={158.29}
                                 />
                               </div>
                             </div>
