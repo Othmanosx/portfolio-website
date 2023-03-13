@@ -169,7 +169,14 @@ const PortfolioList = ({ column, styevariation }) => {
       {!showMore && (
         <button
           className="mt-5 mb-n5 rn-btn btn-solid"
-          onClick={() => setShowMore(true)}
+          onClick={() => {
+            event({
+              action: "show_more",
+              category: "projects",
+              label: "show more projects button",
+            })
+            setShowMore(true)
+          }}
         >
           Show more
         </button>
